@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg4"
+    tools:context="com.example.lad.mynotes.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/file_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="20dp"
+            android:textColorHighlight="@color/colorAccent"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:background="@drawable/bkg1"
+            android:fontFamily="serif"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:hint="Write Filename" />
+
+        <EditText
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:textSize="20dp"
+            android:fontFamily="serif"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/bkg2"
+            android:layout_below="@id/file_name"
+            android:hint="Write Here" />
+
+        <LinearLayout
+            android:id="@+id/btn_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/text"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bkg3"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:text="SAVE"/>
+
+            <Button
+                android:id="@+id/btn_read"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:background="@drawable/bkg3"
+                android:textSize="16dp"
+                android:fontFamily="serif"
+                android:text="READ"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_read"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:fontFamily="serif"
+            android:textIsSelectable="true"
+            android:layout_below="@id/btn_bar"
+            />
+
+    </RelativeLayout>
+</ScrollView>
