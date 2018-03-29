@@ -11,20 +11,37 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
+
         <EditText
             android:id="@+id/file_name"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:inputType="text"
             android:textSize="20dp"
             android:textColorHighlight="@color/colorAccent"
             android:textColor="#000000"
             android:textStyle="bold"
-            android:background="@drawable/bkg1"
+            android:background="@drawable/bkg3"
             android:fontFamily="serif"
             android:padding="10dp"
             android:layout_margin="5dp"
             android:hint="Write Filename" />
+
+        <Spinner
+            android:id="@+id/spinner_fileformat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/file_name"
+            android:layout_alignParentEnd="true"
+            android:textSize="20dp"
+            android:textColorHighlight="@color/colorAccent"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:background="@drawable/bkg3"
+            android:fontFamily="serif"
+            android:padding="10dp"
+            android:layout_margin="5dp"/>
 
         <EditText
             android:id="@+id/text"
